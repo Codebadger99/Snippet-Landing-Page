@@ -1,0 +1,181 @@
+@font-face {
+  font-family: "PublicSans";
+  src: url(../Fonts/static/PublicSans-Medium.ttf);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "PublicSans";
+}
+
+.header {
+  background-image: url(../Assets/Background.png);
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  padding: 3% 60px;
+}
+
+header > img {
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav > ul {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+  padding: 0 20px;
+}
+
+button {
+  display: flex;
+  padding: 0.8em 1em;
+  background-color: black;
+  color: white;
+  border-radius: 0.5em;
+}
+
+button > p {
+  font-weight: 200;
+  color: rgb(198, 195, 195);
+}
+
+.hamburger {
+  display: none;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7em;
+  text-align: center;
+}
+
+.about > h1 {
+  font-size: 3em;
+}
+
+.about_img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 5.5em;
+}
+
+.about_img > img {
+  width: 70em;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 5em;
+}
+
+.editor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+
+.editor > button {
+  width: 12em;
+}
+
+.editor_img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.editor_img > img {
+  width: 30em;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 5em;
+  margin-top: 5em;
+}
+
+.footer_text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5em;
+}
+
+@media screen and (max-width: 1024px) {
+  .about_img > img {
+    width: 60em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .about_img > img {
+    width: 40em;
+  }
+
+  .about {
+    margin-top: 5em;
+  }
+
+  .container {
+    flex-direction: column-reverse;
+    gap: 2em;
+  }
+}
+
+@media screen and (max-width: 425px) {
+    header{
+        padding: 3px 10%;
+    }
+  nav {
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .about_img > img {
+    width: 25em;
+  }
+
+  .editor {
+    width: 20em;
+  }
+
+  .editor_img > img {
+    width: 20em;
+  }
+  .footer {
+    flex-direction: column;
+    gap: 2em;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .about_img > img {
+    width: 20em;
+  }
+}
