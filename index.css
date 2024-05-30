@@ -44,6 +44,8 @@ button {
   background-color: black;
   color: white;
   border-radius: 0.5em;
+  border: none;
+  cursor: pointer;
 }
 
 button > p {
