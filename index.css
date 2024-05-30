@@ -133,6 +133,10 @@ button > p {
 }
 
 @media screen and (max-width: 768px) {
+  .header{
+    padding: 3%;
+  }
+
   .about_img > img {
     width: 40em;
   }
